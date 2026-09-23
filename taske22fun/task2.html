@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Text Styling</title>
+
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+    <div class="controls">
+
+        <select id="fontType" onchange="changeFont()" aria-label="Font type">
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Arial">Arial</option>
+            <option value="fantasy">Fantasy</option>
+        </select>
+
+        <select id="fontSize" onchange="changeSize()" aria-label="Font size">
+            <option value="10px">10px</option>
+            <option value="15px">15px</option>
+            <option value="20px">20px</option>
+            <option value="25px">25px</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="italic" onchange="changeItalic()">
+            Italic
+        </label>
+
+        <label>
+            <input type="checkbox" id="bold" onchange="changeBold()">
+            Bold
+        </label>
+
+        <label>
+            <input type="checkbox" id="underline" onchange="changeUnderline()">
+            Underline
+        </label>
+
+    </div>
+
+    <p id="text">the quick brown fox over the lazy dog</p>
+
+    <script src="task2.js"></script>
+</body>
+</html>
